@@ -1,0 +1,27 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  perspective: 1000px; 
+}
+.card:hover {
+  transform: scale(1.05) rotateX(3deg) rotateY(-3deg); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+.card p {
+  color: #666;
+}
